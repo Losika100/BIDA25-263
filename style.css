@@ -25,10 +25,19 @@
       background: #0b0d12;
     }
 
+
     .logo {
-      font-size: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
       font-weight: 700;
       color: #0032c7;
+    }
+
+    .logo img {
+      height: 30px;
+      width: auto;
     }
 
     .nav-links {
@@ -45,7 +54,7 @@
     .hero {
       height: 80vh;
       background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
-                  url("images/world-cup-ball.jpg.jfif") center/cover no-repeat;
+                  url("images/Real-madrid-4.jpg") center/cover no-repeat;
       display: flex;
       align-items: center;
       padding: 0 60px;
