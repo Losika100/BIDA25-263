@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d0f14;
+  color: white;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0b0d12;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0032c7;
+  font-weight: 700;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* ===== NAV ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px;
+  background: #111;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #0032c7;
+}
+
+/* ===== HERO (CSS IMAGE) ===== */
+.shop-hero {
+  height: 50vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
+    url("../images/shop-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-hero h1 {
+  font-size: 42px;
+  color: #0032c7;
+  letter-spacing: 2px;
+}
+
+/* ===== CATEGORIES (HTML IMAGES) ===== */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 50px;
+}
+
+.card {
+  position: relative;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Image inside card */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.65);
+  transition: transform 0.4s ease;
+}
+
+/* Hover zoom */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.overlay h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.overlay button {
+  padding: 8px 16px;
+  border: none;
+  background: #0032c7;
+  color: black;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background: #0032c7;
+}
+
+/* ===== TEAMS ===== */
+.teams {
+  padding: 50px;
+  text-align: center;
+}
+
+.teams h2 {
+  margin-bottom: 20px;
+  color: #0032c7;
+}
+
+.team-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+}
+
+/* Team logos (HTML images) */
+.team-logos img {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.team-logos img:hover {
+  transform: scale(1.15);
+}
+
+.team-logos p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background: #0b0d12;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+  color: #0032c7;
+}
+
+footer p {
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #111;
+    width: 200px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
