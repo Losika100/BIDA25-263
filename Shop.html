@@ -1,58 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PITCHWEAR APPAREL SHOP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PITCHWEAR APPAREL - Shop</title>
+
+  <link rel="stylesheet" href="shopstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!--HEADER-->
-    <header>
-        <h1>PITCHWEAR APPAREL <img></h1>
-    </header>
-    
-    <!--NAVIGATION-->
-    <nav>
-        <a href="index.html">Home</a>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="">
+    <span>PITCHWEAR APPAREL</span>
+  </div>
+
+  <div class="header-icons">
+    <input type="text" placeholder="Search..." id="search">
+    <div class="cart">🛒 <span>0</span></div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<!-- NAV -->
+ <nav class="nav-links">
+      <nav id="navMenu"></nav>
+      <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
         <a href="Productpage.html">Product Page</a>
         <a href="cart.html">Shopping Cart</a>
         <a href="about.html">About Us</a>
-    </nav>
+ 
+</nav>
 
-    <!--CATEGORY SECTION-->
-    <section class="categories">
-        <div class="category-box">
-            <h3>Latest Kits<img></h3>
-        </div>
+<!-- TITLE -->
+<section class="page-title">
+  <h1>SHOP</h1>
+</section>
 
-        <div class="category-box">
-            <h3>Previous seasons<img></h3>
-        </div>
+<!-- CATEGORY CARDS -->
+<section class="categories">
 
-        <div class="category-box">
-            <h3>Vintage Collection<img></h3>
-        </div>
-    </section>
+  <div class="card">
+    <img src="images/latest.jpg">
+    <div class="overlay">
+      <h2>Latest Kits</h2>
+      <button>Explore Now</button>
+    </div>
+  </div>
 
-    <!--TEAMS SECTION-->
-    <section class="teams">
-        <h2>NAME OF TEAMS</h2>
-        <ul>
-            <li>Real Madrid </li>
-            <li>Manchester United</li>
-            <li>Barcelona</li>
-            <li>Arsenal</li>
-            <li>Chelsea</li>
-            <li>Liverpool</li>
-        </ul>
-    </section>
+  <div class="card">
+    <img src="images/previous.jpg">
+    <div class="overlay">
+      <h2>Previous Seasons</h2>
+      <button>Explore Now</button>
+    </div>
+  </div>
 
-    <!--FOOTER-->
-    <footer>
-        <P>+267 77470786, 76879485, PITCHWEAR APPAREL STORE@FACEBOOK</P>
-    </footer>
+  <div class="card">
+    <img src="images/vintage.jpg">
+    <div class="overlay">
+      <h2>Vintage Collection</h2>
+      <button>Explore Now</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- TEAMS -->
+<section class="teams">
+  <h2>★ NAME OF TEAMS ★</h2>
+
+  <div class="team-logos">
+    <div><img src="images/real.png"><p>Real Madrid</p></div>
+    <div><img src="images/barca.png"><p>Barcelona</p></div>
+    <div><img src="images/united.png"><p>Man United</p></div>
+    <div><img src="images/liverpool.png"><p>Liverpool</p></div>
+    <div><img src="images/chelsea.png"><p>Chelsea</p></div>
+    <div><img src="images/bayern.png"><p>Bayern</p></div>
+    <div><img src="images/psg.png"><p>PSG</p></div>
+    <div><img src="images/juventus.png"><p>Juventus</p></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <div>
+    <h3>PITCHWEAR APPAREL</h3>
+    <p>Premium football kits for champions.</p>
+   </div>
+
+  <div>
+    <h4>Quick Links</h4>
+    <p>Shop</p>
+    <p>Product Page</p>
+    <p>Cart</p>
+  </div>
+
+  <div>
+    <h4>Customer Service</h4>
+    <p>FAQ</p>
+    <p>Shipping</p>
+    <p>Returns</p>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>Instagram@pitchgear.com</p>
+    <p>+267 77 470 786</p>
+  </div>
+
+</footer>
+<script src="shop.js"></script>
 </body>
 </html>
-
-
